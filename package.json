@@ -1,0 +1,7 @@
+{
+    "name": "portfolio-workshop",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "echo 'Hello! package.json'"
+    }
+  }
