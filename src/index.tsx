@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import { Editor } from "./pages/main";
 import { Global, css } from "@emotion/react";
 import "swiper/css";
+import { BrowserRouter } from "react-router-dom"; 
 
 const globalStyles = css`
   body {
@@ -25,7 +26,9 @@ const Main: React.FC = () => {
   return (
     <>
       <Global styles={globalStyles} />
-      <Editor />
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Editor />
+      </BrowserRouter>
     </>
   );
 };
