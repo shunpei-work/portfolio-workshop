@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import Background1 from "../images/スライダーサンプル1.png";
 import Background2 from "../images/スライダーサンプル2.png";
 import styled from "styled-components";
-import { useState,useEffect } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Container = styled.div`
   height:600;
@@ -14,16 +15,24 @@ const SlideContainer = styled.div`
 `;
 
 export const ImageSlider: React.FC = () => {
+  
   const settings = {
     dots: true, // スライダー下のドット表示
     infinite: true, // スライダーを無限にループさせる
     speed: 500, // スライドのスピード（ミリ秒）
     slidesToShow: 1, // 表示するスライド数
     slidesToScroll: 1, // 一度にスクロールするスライド数
+    autoplay: true, // 自動再生
+    autoplaySpeed: 5000, // 自動再生のスピード
+    arrows: true, // 左右の矢印を表示
   };
 
   return (
     <>
+      <p style={{ 
+        fontSize: '20px',
+        textAlign: 'center'
+        }}>自動スライダー</p>
       <Container>
         <Slider {...settings}>
           <SlideContainer>
