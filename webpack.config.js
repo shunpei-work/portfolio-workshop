@@ -33,7 +33,7 @@ module.exports = {
     extensions: ['.js','.ts','.tsx'],
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
     publicPath: 'dist/',
   },
