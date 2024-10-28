@@ -26,9 +26,7 @@ const Main: React.FC = () => {
   return (
     <>
       <Global styles={globalStyles} />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Editor />
-      </BrowserRouter>
     </>
   );
 };

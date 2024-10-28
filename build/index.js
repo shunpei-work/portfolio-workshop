@@ -133,4 +133,4 @@ color:black;
     margin: 0px;
     list-style: none;
   }
-`;(0,r.render)(t.createElement((()=>t.createElement(t.Fragment,null,t.createElement(ki,{styles:da}),t.createElement(ra,null," ",t.createElement(oo,null)))),null),document.getElementById("app"))})()})();
+`;(0,r.render)(t.createElement((()=>t.createElement(t.Fragment,null,t.createElement(ki,{styles:da}),t.createElement(ra,{basename:process.env.PUBLIC_URL},t.createElement(oo,null)))),null),document.getElementById("app"))})()})();
