@@ -1,13 +1,15 @@
 import * as React from "react";
 import Slider from "react-slick";
-import Background1 from "../images/bg_01a.png";
-import Background2 from "../images/bg_01b.png";
+import Background1 from "../images/スライダーサンプル1.png";
+import Background2 from "../images/スライダーサンプル2.png";
 import styled from "styled-components";
+import { useState,useEffect } from "react";
 
-const Image = styled.div``;
 const Container = styled.div`
+  height:600;
+`;
+const SlideContainer = styled.div`
   min-width: 100%; /* 最小幅を100%に設定 */
-  min-height: 100%;
   display: flex;
 `;
 
@@ -19,18 +21,19 @@ export const ImageSlider: React.FC = () => {
     slidesToShow: 1, // 表示するスライド数
     slidesToScroll: 1, // 一度にスクロールするスライド数
   };
+
   return (
     <>
-      <Image>
+      <Container>
         <Slider {...settings}>
-          <Container>
-            <img src={Background1} style={{ width: "1920px" }}></img>
-          </Container>
-          <Container>
-            <img src={Background2} style={{ width: "1920px" }}></img>
-          </Container>
+          <SlideContainer>
+          <img src={Background1} style={{ width: "100%" }}></img>
+          </SlideContainer>
+          <SlideContainer>
+          <img src={Background2} style={{ width: "100%" }}></img>
+          </SlideContainer>
         </Slider>
-      </Image>
+      </Container>
     </>
   );
 };
