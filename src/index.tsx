@@ -2,8 +2,6 @@ import * as React from "react";
 import { render } from "react-dom";
 import { Editor } from "./pages/main";
 import { Global, css } from "@emotion/react";
-import "swiper/css";
-import { BrowserRouter } from "react-router-dom"; 
 
 const globalStyles = css`
   body {
