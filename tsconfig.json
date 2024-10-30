@@ -1,9 +1,0 @@
-{
-    "compilerOptions": {
-      "moduleResolution": "node",
-      "module": "esnext",   // または "es2020", "commonjs" など
-      "outDir": "./dist/",
-      "target": "ES2015",
-      "jsx": "react"
-    }
-  }
